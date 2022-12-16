@@ -14,7 +14,7 @@ public class Api {
 
     public Api() {
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.43.57:3000")
+                .baseUrl("http://192.168.0.103:3000")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         shoeService = retrofit.create(ShoeService.class);
